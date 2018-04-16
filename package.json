@@ -1,0 +1,31 @@
+{
+  "name": "mean-web-dev",
+  "version": "1.0.0",
+  "dependencies": {
+    "compression": "^1.7.2",
+    "express": "^4.16.3",
+    "method-override": "^2.3.10",
+    "morgan": "^1.9.0"
+  },
+  "description": "MEAN Application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryansalvador/mean-web-dev.git"
+  },
+  "keywords": [
+    "MongoDB",
+    "Express",
+    "Angular",
+    "Node.js"
+  ],
+  "author": "Ryan Salvador",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryansalvador/mean-web-dev/issues"
+  },
+  "homepage": "https://github.com/ryansalvador/mean-web-dev#readme"
+}
