@@ -1,4 +1,4 @@
-System.register(["@angular/core", "./authentication/authentication.service", "@angular/router"], function (exports_1, context_1) {
+System.register(["@angular/core", "../authentication/authentication.service"], function (exports_1, context_1) {
     "use strict";
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -10,7 +10,7 @@ System.register(["@angular/core", "./authentication/authentication.service", "@a
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var __moduleName = context_1 && context_1.id;
-    var core_1, authentication_service_1, router_1, AppComponent;
+    var core_1, authentication_service_1, HomeComponent;
     return {
         setters: [
             function (core_1_1) {
@@ -18,28 +18,25 @@ System.register(["@angular/core", "./authentication/authentication.service", "@a
             },
             function (authentication_service_1_1) {
                 authentication_service_1 = authentication_service_1_1;
-            },
-            function (router_1_1) {
-                router_1 = router_1_1;
             }
         ],
         execute: function () {
-            AppComponent = /** @class */ (function () {
-                function AppComponent(_authenticationService, router) {
+            HomeComponent = /** @class */ (function () {
+                function HomeComponent(_authenticationService) {
                     this._authenticationService = _authenticationService;
-                    this.router = router;
+                    this.user = _authenticationService.user;
                 }
-                AppComponent = __decorate([
+                HomeComponent = __decorate([
                     core_1.Component({
-                        selector: 'mean-app',
-                        template: '<router-outlet></router-outlet>',
+                        selector: 'home',
+                        templateUrl: './app/home/home.template.html'
                     }),
-                    __metadata("design:paramtypes", [authentication_service_1.AuthenticationService, router_1.Router])
-                ], AppComponent);
-                return AppComponent;
+                    __metadata("design:paramtypes", [authentication_service_1.AuthenticationService])
+                ], HomeComponent);
+                return HomeComponent;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("HomeComponent", HomeComponent);
         }
     };
 });
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=home.component.js.map
