@@ -12,6 +12,8 @@ import {HomeModule} from './home/home.module';
 import {AuthenticationService} from './authentication/authentication.service';
 import {AuthenticationModule} from './authentication/authentication.module';
 
+import {ArticlesModule} from './articles/articles.module';
+
 @NgModule({
     imports: [
         BrowserModule,
@@ -19,6 +21,7 @@ import {AuthenticationModule} from './authentication/authentication.module';
         FormsModule,
         AuthenticationModule,
         HomeModule,
+        ArticlesModule,
         RouterModule.forRoot(AppRoutes),
     ],
     declarations: [
