@@ -19,6 +19,8 @@
     "@angular/router": "^5.2.10",
     "compression": "^1.7.2",
     "connect-flash": "^0.1.1",
+    "connect-mongo": "^2.0.1",
+    "cookie-parser": "^1.4.3",
     "core-js": "^2.5.5",
     "ejs": "^2.5.8",
     "express": "^4.16.3",
@@ -34,6 +36,7 @@
     "passport-twitter": "^1.0.4",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^5.5.10",
+    "socket.io": "^2.1.0",
     "systemjs": "^0.21.3",
     "zone.js": "^0.8.26"
   },

@@ -1,19 +1,29 @@
 // Load the module dependencies
 const config = require('./config');
 const path = require('path');
+const http = require('http');
+const socketio = require('socket.io');
 const express = require('express');
 const morgan = require('morgan');
 const compress = require('compression');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 const session = require('express-session');
+const MongoStore = require('connect-mongo')(session);
 const flash = require('connect-flash');
 const passport = require('passport');
+const configureSocket = require('./socketio');
 
 // Define the Express configuration method
-module.exports = function() {
+module.exports = function (db) {
     // Create a new Express application instance
     const app = express();
+
+    // Create a new HTTP server
+    const server = http.createServer(app);
+
+    // Create a new Socket.io server
+    const io = socketio.listen(server);
 
     // Use the 'NDOE_ENV' variable to activate the 'morgan' logger or 'compress' middleware
     if (process.env.NODE_ENV === 'development') {
@@ -29,11 +39,22 @@ module.exports = function() {
     app.use(bodyParser.json());
     app.use(methodOverride());
 
+    console.log(db);
+
+    // Configure the MongoDB session storage - https://github.com/jdesboeufs/connect-mongo/issues/286
+    // const mongoStore = new MongoStore({
+    //     mongooseConnection: db.connection
+    // });
+    const mongoStore = new MongoStore({
+        url: config.db
+    });
+
     // Configure the 'session' middleware
     app.use(session({
         saveUninitialized: true,
         resave: true,
-        secret: config.sessionSecret
+        secret: config.sessionSecret,
+        store: mongoStore
     }));
 
     // Set the application view engine and 'views' folder
@@ -56,6 +77,9 @@ module.exports = function() {
     require('../app/routes/articles.server.routes.js')(app);
     require('../app/routes/index.server.routes.js')(app);
 
-    // Return the Express application instance
-    return app;
+    // Load the Socket.io configuration
+    configureSocket(server, io, mongoStore);
+
+    // Return the Server instance
+    return server;
 };
