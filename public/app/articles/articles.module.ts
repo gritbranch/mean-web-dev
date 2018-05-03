@@ -11,17 +11,17 @@ import { ViewComponent } from './view/view.component';
 import { EditComponent } from './edit/edit.component';
 
 @NgModule({
-    imports: [
-        CommonModule,
-        FormsModule,
-        RouterModule.forChild(ArticlesRoutes),
-    ],
-    declarations: [
-        ArticlesComponent,
-        CreateComponent,
-        ListComponent,
-        ViewComponent,
-        EditComponent,
-    ]
+  imports: [
+    CommonModule,
+    FormsModule,
+    RouterModule.forChild(ArticlesRoutes),
+  ],
+  declarations: [
+    ArticlesComponent,
+    CreateComponent,
+    ListComponent,
+    ViewComponent,
+    EditComponent,
+  ]
 })
 export class ArticlesModule {}

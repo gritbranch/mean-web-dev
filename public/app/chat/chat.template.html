@@ -1,9 +1,9 @@
 <div *ngFor="let message of messages" [ngSwitch]="message.type">
     <strong *ngSwitchCase="'status'">
-        <span>{{message.created}}</span>
-        <span>{{message.username}}</span>
-        <span>is</span>
-        <span>{{message.text}}</span>
+		<span>{{message.created}}</span>
+		<span>{{message.username}}</span>
+		<span>is</span>
+		<span>{{message.text}}</span>
     </strong>
     <span *ngSwitchDefault>
 	    <span>{{message.created}}</span>

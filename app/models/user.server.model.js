@@ -23,6 +23,7 @@ const UserSchema = new Schema({
 	},
 	password: {
 		type: String,
+		required: 'Password is required',
 		// Validate the 'password' value length
 		validate: [
 			(password) => password && password.length > 6,
@@ -67,7 +68,7 @@ UserSchema.pre('save', function(next) {
 
 // Create an instance method for hashing a password
 UserSchema.methods.hashPassword = function(password) {
-	return crypto.pbkdf2Sync(password, this.salt, 10000, 64, 'sha1').toString('base64');
+	return crypto.pbkdf2Sync(password, this.salt, 10000, 64).toString('base64');
 };
 
 // Create an instance method for authenticating user
