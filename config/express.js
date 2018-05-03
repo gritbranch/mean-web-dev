@@ -39,15 +39,15 @@ module.exports = function (db) {
     app.use(bodyParser.json());
     app.use(methodOverride());
 
-    console.log(db);
+    // console.log(db);
 
     // Configure the MongoDB session storage - https://github.com/jdesboeufs/connect-mongo/issues/286
-    // const mongoStore = new MongoStore({
-    //     mongooseConnection: db.connection
-    // });
     const mongoStore = new MongoStore({
-        url: config.db
+        mongooseConnection: db.connection
     });
+    // const mongoStore = new MongoStore({
+    //     url: config.db
+    // });
 
     // Configure the 'session' middleware
     app.use(session({
