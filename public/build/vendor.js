@@ -10,7 +10,7 @@ webpackJsonp([2],[
 	__webpack_require__(58);
 	__webpack_require__(28);
 	__webpack_require__(61);
-
+	//# sourceMappingURL=vendor.js.map
 
 /***/ },
 /* 1 */

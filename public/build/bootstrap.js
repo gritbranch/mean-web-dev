@@ -7,7 +7,7 @@ webpackJsonp([0],{
 	var platform_browser_dynamic_1 = __webpack_require__(1);
 	var app_module_1 = __webpack_require__(23);
 	platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(app_module_1.AppModule);
-
+	//# sourceMappingURL=bootstrap.js.map
 
 /***/ },
 
@@ -64,7 +64,7 @@ webpackJsonp([0],{
 	    return AppModule;
 	}());
 	exports.AppModule = AppModule;
-
+	//# sourceMappingURL=app.module.js.map
 
 /***/ },
 
@@ -4618,13 +4618,12 @@ webpackJsonp([0],{
 	            selector: 'mean-app',
 	            template: '<router-outlet></router-outlet>',
 	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof authentication_service_1.AuthenticationService !== 'undefined' && authentication_service_1.AuthenticationService) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object])
+	        __metadata('design:paramtypes', [authentication_service_1.AuthenticationService, router_1.Router])
 	    ], AppComponent);
 	    return AppComponent;
-	    var _a, _b;
 	}());
 	exports.AppComponent = AppComponent;
-
+	//# sourceMappingURL=app.component.js.map
 
 /***/ },
 
@@ -4679,13 +4678,12 @@ webpackJsonp([0],{
 	    };
 	    AuthenticationService = __decorate([
 	        core_1.Injectable(), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
+	        __metadata('design:paramtypes', [http_1.Http])
 	    ], AuthenticationService);
 	    return AuthenticationService;
-	    var _a;
 	}());
 	exports.AuthenticationService = AuthenticationService;
-
+	//# sourceMappingURL=authentication.service.js.map
 
 /***/ },
 
@@ -4694,7 +4692,7 @@ webpackJsonp([0],{
 
 	"use strict";
 	exports.AppRoutes = [];
-
+	//# sourceMappingURL=app.routes.js.map
 
 /***/ },
 
@@ -4736,7 +4734,7 @@ webpackJsonp([0],{
 	    return HomeModule;
 	}());
 	exports.HomeModule = HomeModule;
-
+	//# sourceMappingURL=home.module.js.map
 
 /***/ },
 
@@ -4749,7 +4747,7 @@ webpackJsonp([0],{
 	        path: '',
 	        component: home_component_1.HomeComponent,
 	    }];
-
+	//# sourceMappingURL=home.routes.js.map
 
 /***/ },
 
@@ -4778,13 +4776,12 @@ webpackJsonp([0],{
 	            selector: 'home',
 	            templateUrl: './app/home/home.template.html'
 	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof authentication_service_1.AuthenticationService !== 'undefined' && authentication_service_1.AuthenticationService) === 'function' && _a) || Object])
+	        __metadata('design:paramtypes', [authentication_service_1.AuthenticationService])
 	    ], HomeComponent);
 	    return HomeComponent;
-	    var _a;
 	}());
 	exports.HomeComponent = HomeComponent;
-
+	//# sourceMappingURL=home.component.js.map
 
 /***/ },
 
@@ -4830,7 +4827,7 @@ webpackJsonp([0],{
 	    return AuthenticationModule;
 	}());
 	exports.AuthenticationModule = AuthenticationModule;
-
+	//# sourceMappingURL=authentication.module.js.map
 
 /***/ },
 
@@ -4849,7 +4846,7 @@ webpackJsonp([0],{
 	            { path: 'signup', component: signup_component_1.SignupComponent },
 	        ],
 	    }];
-
+	//# sourceMappingURL=authentication.routes.js.map
 
 /***/ },
 
@@ -4880,7 +4877,7 @@ webpackJsonp([0],{
 	    return AuthenticationComponent;
 	}());
 	exports.AuthenticationComponent = AuthenticationComponent;
-
+	//# sourceMappingURL=authentication.component.js.map
 
 /***/ },
 
@@ -4915,13 +4912,12 @@ webpackJsonp([0],{
 	            selector: 'signin',
 	            templateUrl: 'app/authentication/signin/signin.template.html'
 	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof authentication_service_1.AuthenticationService !== 'undefined' && authentication_service_1.AuthenticationService) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object])
+	        __metadata('design:paramtypes', [authentication_service_1.AuthenticationService, router_1.Router])
 	    ], SigninComponent);
 	    return SigninComponent;
-	    var _a, _b;
 	}());
 	exports.SigninComponent = SigninComponent;
-
+	//# sourceMappingURL=signin.component.js.map
 
 /***/ },
 
@@ -4957,13 +4953,12 @@ webpackJsonp([0],{
 	            selector: 'signup',
 	            templateUrl: 'app/authentication/signup/signup.template.html'
 	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof authentication_service_1.AuthenticationService !== 'undefined' && authentication_service_1.AuthenticationService) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object])
+	        __metadata('design:paramtypes', [authentication_service_1.AuthenticationService, router_1.Router])
 	    ], SignupComponent);
 	    return SignupComponent;
-	    var _a, _b;
 	}());
 	exports.SignupComponent = SignupComponent;
-
+	//# sourceMappingURL=signup.component.js.map
 
 /***/ },
 
@@ -5013,7 +5008,7 @@ webpackJsonp([0],{
 	    return ArticlesModule;
 	}());
 	exports.ArticlesModule = ArticlesModule;
-
+	//# sourceMappingURL=articles.module.js.map
 
 /***/ },
 
@@ -5036,7 +5031,7 @@ webpackJsonp([0],{
 	            { path: ':articleId/edit', component: edit_component_1.EditComponent }
 	        ],
 	    }];
-
+	//# sourceMappingURL=articles.routes.js.map
 
 /***/ },
 
@@ -5069,7 +5064,7 @@ webpackJsonp([0],{
 	    return ArticlesComponent;
 	}());
 	exports.ArticlesComponent = ArticlesComponent;
-
+	//# sourceMappingURL=articles.component.js.map
 
 /***/ },
 
@@ -5130,13 +5125,12 @@ webpackJsonp([0],{
 	    };
 	    ArticlesService = __decorate([
 	        core_1.Injectable(), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
+	        __metadata('design:paramtypes', [http_1.Http])
 	    ], ArticlesService);
 	    return ArticlesService;
-	    var _a;
 	}());
 	exports.ArticlesService = ArticlesService;
-
+	//# sourceMappingURL=articles.service.js.map
 
 /***/ },
 
@@ -5171,13 +5165,12 @@ webpackJsonp([0],{
 	            selector: 'create',
 	            templateUrl: 'app/articles/create/create.template.html'
 	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object, (typeof (_b = typeof articles_service_1.ArticlesService !== 'undefined' && articles_service_1.ArticlesService) === 'function' && _b) || Object])
+	        __metadata('design:paramtypes', [router_1.Router, articles_service_1.ArticlesService])
 	    ], CreateComponent);
 	    return CreateComponent;
-	    var _a, _b;
 	}());
 	exports.CreateComponent = CreateComponent;
-
+	//# sourceMappingURL=create.component.js.map
 
 /***/ },
 
@@ -5209,13 +5202,12 @@ webpackJsonp([0],{
 	            selector: 'list',
 	            templateUrl: 'app/articles/list/list.template.html'
 	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof articles_service_1.ArticlesService !== 'undefined' && articles_service_1.ArticlesService) === 'function' && _a) || Object])
+	        __metadata('design:paramtypes', [articles_service_1.ArticlesService])
 	    ], ListComponent);
 	    return ListComponent;
-	    var _a;
 	}());
 	exports.ListComponent = ListComponent;
-
+	//# sourceMappingURL=list.component.js.map
 
 /***/ },
 
@@ -5269,13 +5261,12 @@ webpackJsonp([0],{
 	            selector: 'view',
 	            templateUrl: 'app/articles/view/view.template.html',
 	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object, (typeof (_b = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _b) || Object, (typeof (_c = typeof authentication_service_1.AuthenticationService !== 'undefined' && authentication_service_1.AuthenticationService) === 'function' && _c) || Object, (typeof (_d = typeof articles_service_1.ArticlesService !== 'undefined' && articles_service_1.ArticlesService) === 'function' && _d) || Object])
+	        __metadata('design:paramtypes', [router_1.Router, router_1.ActivatedRoute, authentication_service_1.AuthenticationService, articles_service_1.ArticlesService])
 	    ], ViewComponent);
 	    return ViewComponent;
-	    var _a, _b, _c, _d;
 	}());
 	exports.ViewComponent = ViewComponent;
-
+	//# sourceMappingURL=view.component.js.map
 
 /***/ },
 
@@ -5323,13 +5314,12 @@ webpackJsonp([0],{
 	            selector: 'edit',
 	            templateUrl: 'app/articles/edit/edit.template.html'
 	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object, (typeof (_b = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _b) || Object, (typeof (_c = typeof articles_service_1.ArticlesService !== 'undefined' && articles_service_1.ArticlesService) === 'function' && _c) || Object])
+	        __metadata('design:paramtypes', [router_1.Router, router_1.ActivatedRoute, articles_service_1.ArticlesService])
 	    ], EditComponent);
 	    return EditComponent;
-	    var _a, _b, _c;
 	}());
 	exports.EditComponent = EditComponent;
-
+	//# sourceMappingURL=edit.component.js.map
 
 /***/ },
 
@@ -5375,7 +5365,7 @@ webpackJsonp([0],{
 	    return ChatModule;
 	}());
 	exports.ChatModule = ChatModule;
-
+	//# sourceMappingURL=chat.module.js.map
 
 /***/ },
 
@@ -5388,7 +5378,7 @@ webpackJsonp([0],{
 	        path: 'chat',
 	        component: chat_component_1.ChatComponent
 	    }];
-
+	//# sourceMappingURL=chat.routes.js.map
 
 /***/ },
 
@@ -5434,13 +5424,12 @@ webpackJsonp([0],{
 	            templateUrl: 'app/chat/chat.template.html',
 	            providers: [chat_service_1.ChatService]
 	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof chat_service_1.ChatService !== 'undefined' && chat_service_1.ChatService) === 'function' && _a) || Object])
+	        __metadata('design:paramtypes', [chat_service_1.ChatService])
 	    ], ChatComponent);
 	    return ChatComponent;
-	    var _a;
 	}());
 	exports.ChatComponent = ChatComponent;
-
+	//# sourceMappingURL=chat.component.js.map
 
 /***/ },
 
@@ -5494,13 +5483,12 @@ webpackJsonp([0],{
 	    ;
 	    ChatService = __decorate([
 	        core_1.Injectable(), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object, (typeof (_b = typeof authentication_service_1.AuthenticationService !== 'undefined' && authentication_service_1.AuthenticationService) === 'function' && _b) || Object])
+	        __metadata('design:paramtypes', [router_1.Router, authentication_service_1.AuthenticationService])
 	    ], ChatService);
 	    return ChatService;
-	    var _a, _b;
 	}());
 	exports.ChatService = ChatService;
-
+	//# sourceMappingURL=chat.service.js.map
 
 /***/ }
 
